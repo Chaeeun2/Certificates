@@ -1,0 +1,130 @@
+* {
+    cursor: url("resource/cursor-04.png") 22 22, auto;
+}
+
+.chapter1:hover {
+    cursor: url("resource/cursor-02.png") 22 22, auto;
+}
+
+.chapter2:hover {
+    cursor: url("resource/cursor-03.png") 22 22, auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#side {
+    color: black;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    transform: translateY(52px);
+    transition: 0.5s;
+}
+
+#sidetop {
+    border-top: 1.5px solid black;
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+    width: 3%;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background: rgb(231, 231, 231);
+}
+
+#sidecontent {
+    border-top: 1.5px solid black;
+    display: flex;
+    background: rgb(231, 231, 231);
+}
+
+.chapter1,
+.chapter2,
+.chapter3 {
+    font-size: 1.2em;
+    border-right: 1.5px solid black;
+    height: 20px;
+    padding: 15px 20px;
+    margin: 0;
+    flex-grow: 1;
+    width: 31vw;
+}
+
+.chapter3 {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.chapter1:hover,
+.chapter2:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: Galmuri14;
+    height: 100%;
+    overflow: hidden;
+}
+
+#html {
+    background: rgb(231, 231, 231);
+}
+
+.filewrap {
+    width: 6.5em;
+    text-align: center;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.file {
+    width: 65%;
+    height: 5.5em;
+    background: white;
+    border: 1.5px solid;
+    margin: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Galmuri14;
+}
+
+.file img {
+    width: 5.5em;
+    height: 5.5em;
+    margin: auto;
+    margin-left: -0.5em;
+}
+
+.foldername,
+.filename {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Galmuri14;
+    font-size: 1em;
+}
+
+.page3random {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 1.2s ease-in-out, left 1.2s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.page3random:hover {
+    transform: translateX(400px);
+}
+
+.fileyear {
+    font-size: 1.25em;
+}
